@@ -1,0 +1,3 @@
+# This folder holds processed 1000×1000 JPG dish photos for the Signature stage plate.
+# Run `npm run images:plates` to process raw photos from incoming-images/signature/.
+# Run `node scripts/migrate-signature-images.mjs` once to copy existing photos here.

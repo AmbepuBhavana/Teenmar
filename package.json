@@ -1,0 +1,36 @@
+{
+  "name": "teenmaar-telugu-kitchen",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "images:plates": "node scripts/make-plate-images.mjs",
+    "images:copy": "node scripts/copy-plate-sources.mjs",
+    "images:generate": "node scripts/generate-images.mjs",
+    "images:signature": "node scripts/generate-menu-images.mjs --signature-only",
+    "images:demo": "node scripts/generate-menu-images.mjs --signature-only --categories=non-veg-biryanis,veg-biryanis,mutton,non-veg-starters",
+    "images:menu": "node scripts/generate-menu-images.mjs",
+    "images:prompts": "node scripts/make-prompt-sheet.mjs",
+    "images:convert": "node scripts/convert-images.mjs",
+    "images:check": "node scripts/check-images.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.4",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  },
+  "dependencies": {
+    "gsap": "^3.15.1",
+    "lucide-react": "^1.70.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}
