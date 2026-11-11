@@ -194,13 +194,27 @@ export function Navbar() {
           <span className="text-[0.65rem] text-warm/75">11:30 AM – 11:30 PM</span>
         </div>
 
-        <a
-          href="#order"
-          onClick={scrollTo('order', '#order')}
-          className="inline-flex shrink-0 items-center rounded-full bg-[#85170D] px-[14px] py-[9px] text-[13px] font-semibold whitespace-nowrap text-warm min-[900px]:hidden"
-        >
-          Order online
-        </a>
+        <div className="flex shrink-0 items-center gap-2 min-[900px]:hidden">
+          {whatsappHref ? (
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Chat on WhatsApp at ${restaurant.phones[0].number}`}
+              className="inline-flex items-center gap-1 rounded-full bg-[#25D366] px-3 py-[9px] text-[12px] font-semibold whitespace-nowrap text-white"
+            >
+              <MessageCircle size={14} aria-hidden="true" />
+              WhatsApp
+            </a>
+          ) : null}
+          <a
+            href="#order"
+            onClick={scrollTo('order', '#order')}
+            className="inline-flex items-center rounded-full bg-[#85170D] px-[14px] py-[9px] text-[13px] font-semibold whitespace-nowrap text-warm"
+          >
+            Order online
+          </a>
+        </div>
       </div>
 
       <nav
