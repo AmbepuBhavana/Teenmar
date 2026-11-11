@@ -8,7 +8,7 @@ export const DEMO_MODE = false
 
 // Confirm with the owner: do they take table reservations, the WhatsApp number, group-size and notice rules.
 export const SHOW_RESERVATION: boolean = true
-export const WHATSAPP_NUMBER: string = ''
+export const WHATSAPP_NUMBER: string = '917659853475'
 export const REGIONS = ['Telangana', 'Andhra', 'Rayalaseema'] as const
 
 export const restaurant = {
